@@ -1,6 +1,6 @@
 # webview_ufrn_api
 
-A new Flutter application.
+Aplicação para obter as informações do Discente da UFRN, através de uma WebView.
 
 ## Getting Started
 
