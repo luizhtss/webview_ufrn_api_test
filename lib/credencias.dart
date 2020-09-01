@@ -12,12 +12,11 @@ class Credenciais{
   static getXApiKey() => _xApiKey;
 
   static carregarCredenciais(){
-      Future<String> jsonFuture = _carregarCredJSON();
-      jsonFuture.then((value) => (){
-         var jsonDecoded = json.decode(value);
-         _clientId = jsonDecoded['client-id'];
-         _clientSecret = jsonDecoded['client-secret'];
-         _xApiKey = jsonDecoded['x-api-key'];
+      _carregarCredJSON().then((value){
+        var jsonDecoded = json.decode(value);
+        _clientId = jsonDecoded['client-id'];
+        _clientSecret = jsonDecoded['client-secret'];
+        _xApiKey = jsonDecoded['x-api-key'];
       });
   }
 
