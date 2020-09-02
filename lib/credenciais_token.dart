@@ -12,16 +12,16 @@ class Credenciais{
   static getXApiKey() => _xApiKey;
 
   static carregarCredenciais(){
-      _carregarCredJSON().then((value){
-        var jsonDecoded = json.decode(value);
-        _clientId = jsonDecoded['client-id'];
-        _clientSecret = jsonDecoded['client-secret'];
-        _xApiKey = jsonDecoded['x-api-key'];
-      });
+    _carregarCredJSON().then((value){
+      var jsonDecoded = json.decode(value);
+      _clientId = jsonDecoded['client-id'];
+      _clientSecret = jsonDecoded['client-secret'];
+      _xApiKey = jsonDecoded['x-api-key'];
+    });
   }
 
   static Future<String> _carregarCredJSON() async {
-      return await rootBundle.loadString("assets/credenciais.json", cache: false);
+    return await rootBundle.loadString("assets/credenciais.json", cache: false);
   }
 
 }
