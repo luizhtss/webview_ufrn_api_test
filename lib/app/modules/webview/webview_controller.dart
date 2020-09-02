@@ -1,12 +1,12 @@
 import 'package:mobx/mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
-part 'home_controller.g.dart';
+part 'webview_controller.g.dart';
 
 @Injectable()
-class HomeController = _HomeControllerBase with _$HomeController;
+class WebviewController = _WebviewControllerBase with _$WebviewController;
 
-abstract class _HomeControllerBase with Store {
+abstract class _WebviewControllerBase with Store {
   @observable
   int value = 0;
 
