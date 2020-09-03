@@ -1,4 +1,5 @@
 import 'package:webview_ufrn_api/app/modules/splashscreen/splashscreen_module.dart';
+import 'package:webview_ufrn_api/app/modules/webview/webview_module.dart';
 
 import 'app_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -14,7 +15,9 @@ class AppModule extends MainModule {
   @override
   List<ModularRouter> get routers => [
         ModularRouter(Modular.initialRoute, module: SplashscreenModule()),
-      ];
+        ModularRouter("/webview", module: WebviewModule()),
+
+  ];
 
   @override
   Widget get bootstrap => AppWidget();
