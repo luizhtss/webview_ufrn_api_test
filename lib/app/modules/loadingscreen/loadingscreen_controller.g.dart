@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'splashscreen_controller.dart';
+part of 'loadingscreen_controller.dart';
 
 // **************************************************************************
 // InjectionGenerator
 // **************************************************************************
 
-final $SplashscreenController = BindInject(
-  (i) => SplashscreenController(),
+final $LoadingscreenController = BindInject(
+  (i) => LoadingscreenController(),
   singleton: true,
   lazy: true,
 );
@@ -18,8 +18,8 @@ final $SplashscreenController = BindInject(
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
-mixin _$SplashscreenController on _SplashscreenControllerBase, Store {
-  final _$valueAtom = Atom(name: '_SplashscreenControllerBase.value');
+mixin _$LoadingscreenController on _LoadingscreenControllerBase, Store {
+  final _$valueAtom = Atom(name: '_LoadingscreenControllerBase.value');
 
   @override
   int get value {
@@ -34,17 +34,17 @@ mixin _$SplashscreenController on _SplashscreenControllerBase, Store {
     });
   }
 
-  final _$_SplashscreenControllerBaseActionController =
-      ActionController(name: '_SplashscreenControllerBase');
+  final _$_LoadingscreenControllerBaseActionController =
+      ActionController(name: '_LoadingscreenControllerBase');
 
   @override
   void increment() {
-    final _$actionInfo = _$_SplashscreenControllerBaseActionController
-        .startAction(name: '_SplashscreenControllerBase.increment');
+    final _$actionInfo = _$_LoadingscreenControllerBaseActionController
+        .startAction(name: '_LoadingscreenControllerBase.increment');
     try {
       return super.increment();
     } finally {
-      _$_SplashscreenControllerBaseActionController.endAction(_$actionInfo);
+      _$_LoadingscreenControllerBaseActionController.endAction(_$actionInfo);
     }
   }
 

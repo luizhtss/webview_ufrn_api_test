@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:webview_ufrn_api/credenciais_token.dart';
-import 'splashscreen_controller.dart';
+import 'loadingscreen_controller.dart';
 
-class SplashscreenPage extends StatefulWidget {
+class LoadingScreenPage extends StatefulWidget {
   final String title;
-  const SplashscreenPage({Key key, this.title = "Splashscreen"})
+  const LoadingScreenPage({Key key, this.title = "Splashscreen"})
       : super(key: key);
 
   @override
-  _SplashscreenPageState createState() => _SplashscreenPageState();
+  _LoadingScreenPageState createState() => _LoadingScreenPageState();
 }
 
-class _SplashscreenPageState
-    extends ModularState<SplashscreenPage, SplashscreenController> {
+class _LoadingScreenPageState
+    extends ModularState<LoadingScreenPage, LoadingscreenController> {
   //use 'controller' variable to access controller
 
   @override
