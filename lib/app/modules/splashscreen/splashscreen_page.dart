@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:webview_ufrn_api/credenciais_token.dart';
 import 'splashscreen_controller.dart';
 
 class SplashscreenPage extends StatefulWidget {
@@ -17,13 +18,16 @@ class _SplashscreenPageState
 
   @override
   Widget build(BuildContext context) {
+    Credenciais.carregarCredenciais().then((value){
+      Modular.to.pushNamedAndRemoveUntil("/webview", (route) => false);
+    });
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
-        children: <Widget>[],
-      ),
+      body: Center(
+        child: Text("Carregando..."),
+      )
     );
   }
 }
